@@ -1,0 +1,217 @@
+[
+  {
+    "id": "ROCK-0001",
+    "recordStatus": "awaiting-import",
+    "identification": {
+      "name": null,
+      "species": null,
+      "status": "pending",
+      "confidence": null,
+      "method": null,
+      "notes": null,
+      "alternatives": []
+    },
+    "collection": {
+      "dateAcquired": null,
+      "acquisitionType": null,
+      "acquiredFrom": null,
+      "originalLabel": null,
+      "notes": null
+    },
+    "observations": {
+      "colours": [],
+      "colourDescription": null,
+      "habit": null,
+      "lustre": null,
+      "associatedMinerals": [],
+      "dimensions": null,
+      "mass": null,
+      "notes": null
+    },
+    "mineralogy": {},
+    "provenance": {
+      "documented": null,
+      "hypotheses": [],
+      "formationEnvironment": null,
+      "notes": null
+    },
+    "media": {
+      "cover": null,
+      "photos": [],
+      "originalScanFilename": null,
+      "scanNotes": null
+    }
+  },
+  {
+    "id": "ROCK-0002",
+    "recordStatus": "awaiting-import",
+    "identification": {
+      "name": null,
+      "species": null,
+      "status": "unidentified",
+      "confidence": null,
+      "method": null,
+      "notes": null,
+      "alternatives": []
+    },
+    "collection": {
+      "dateAcquired": null,
+      "acquisitionType": null,
+      "acquiredFrom": null,
+      "originalLabel": null,
+      "notes": null
+    },
+    "observations": {
+      "colours": [],
+      "colourDescription": null,
+      "habit": null,
+      "lustre": null,
+      "associatedMinerals": [],
+      "dimensions": null,
+      "mass": null,
+      "notes": null
+    },
+    "mineralogy": {},
+    "provenance": {
+      "documented": null,
+      "hypotheses": [],
+      "formationEnvironment": null,
+      "notes": null
+    },
+    "media": {
+      "cover": null,
+      "photos": [],
+      "originalScanFilename": null,
+      "scanNotes": null
+    }
+  },
+  {
+    "id": "ROCK-0003",
+    "recordStatus": "awaiting-import",
+    "identification": {
+      "name": null,
+      "species": null,
+      "status": "pending",
+      "confidence": null,
+      "method": null,
+      "notes": null,
+      "alternatives": []
+    },
+    "collection": {
+      "dateAcquired": null,
+      "acquisitionType": null,
+      "acquiredFrom": null,
+      "originalLabel": null,
+      "notes": null
+    },
+    "observations": {
+      "colours": [],
+      "colourDescription": null,
+      "habit": null,
+      "lustre": null,
+      "associatedMinerals": [],
+      "dimensions": null,
+      "mass": null,
+      "notes": null
+    },
+    "mineralogy": {},
+    "provenance": {
+      "documented": null,
+      "hypotheses": [],
+      "formationEnvironment": null,
+      "notes": null
+    },
+    "media": {
+      "cover": null,
+      "photos": [],
+      "originalScanFilename": null,
+      "scanNotes": null
+    }
+  },
+  {
+    "id": "ROCK-0004",
+    "recordStatus": "awaiting-import",
+    "identification": {
+      "name": "Conichalcite",
+      "species": "conichalcite",
+      "status": "confirmed",
+      "confidence": null,
+      "method": null,
+      "notes": null,
+      "alternatives": []
+    },
+    "collection": {
+      "dateAcquired": null,
+      "acquisitionType": null,
+      "acquiredFrom": null,
+      "originalLabel": null,
+      "notes": null
+    },
+    "observations": {
+      "colours": [],
+      "colourDescription": null,
+      "habit": null,
+      "lustre": null,
+      "associatedMinerals": [],
+      "dimensions": null,
+      "mass": null,
+      "notes": null
+    },
+    "mineralogy": {},
+    "provenance": {
+      "documented": null,
+      "hypotheses": [],
+      "formationEnvironment": null,
+      "notes": null
+    },
+    "media": {
+      "cover": null,
+      "photos": [],
+      "originalScanFilename": null,
+      "scanNotes": null
+    }
+  },
+  {
+    "id": "ROCK-0005",
+    "recordStatus": "awaiting-import",
+    "identification": {
+      "name": "Scolecite",
+      "species": "scolecite",
+      "status": "tentative",
+      "confidence": null,
+      "method": null,
+      "notes": null,
+      "alternatives": []
+    },
+    "collection": {
+      "dateAcquired": null,
+      "acquisitionType": null,
+      "acquiredFrom": null,
+      "originalLabel": null,
+      "notes": null
+    },
+    "observations": {
+      "colours": [],
+      "colourDescription": null,
+      "habit": null,
+      "lustre": null,
+      "associatedMinerals": [],
+      "dimensions": null,
+      "mass": null,
+      "notes": null
+    },
+    "mineralogy": {},
+    "provenance": {
+      "documented": null,
+      "hypotheses": [],
+      "formationEnvironment": null,
+      "notes": null
+    },
+    "media": {
+      "cover": null,
+      "photos": [],
+      "originalScanFilename": null,
+      "scanNotes": null
+    }
+  }
+]

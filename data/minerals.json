@@ -1,0 +1,50 @@
+{
+  "_about": "Reference properties of mineral SPECIES, not of individual specimens. These describe what is generally true of a species and are shown on a specimen page only as background, clearly labelled. Never use them as evidence of where a particular specimen came from. Key = lowercase species name, referenced from specimens.json → identification.species.",
+  "conichalcite": {
+    "name": "Conichalcite",
+    "formula": "CaCu(AsO₄)(OH)",
+    "group": "Adelite group",
+    "class": "Arsenates",
+    "crystalSystem": "Orthorhombic",
+    "hardness": "4.5",
+    "specificGravity": "4.33 (measured)",
+    "colour": "Grass-green to yellowish green, pistachio-green, emerald-green",
+    "streak": "Green",
+    "lustre": "Vitreous to somewhat greasy",
+    "habit": "Typically radial fibrous aggregates, botryoidal to reniform crusts, or massive; euhedral crystals are rare",
+    "typicalAssociates": ["Austinite", "Olivenite", "Clinoclase", "Libethenite", "Brochantite", "Malachite", "Azurite", "Jarosite", "“Limonite”"],
+    "formationEnvironment": "An uncommon secondary mineral in the oxidized zone of copper deposits, typically forming by alteration of enargite.",
+    "properties": [
+      "Forms solid-solution series with austinite (zinc in place of copper), cobaltaustinite, and tangeite.",
+      "Commonly colour-zoned when viewed in thin section.",
+      "Name from the Greek for “lime” and “copper”, the two essential metals in its composition."
+    ],
+    "sources": [
+      { "label": "Handbook of Mineralogy — Conichalcite", "url": "https://www.handbookofmineralogy.org/pdfs/conichalcite.pdf" }
+    ]
+  },
+  "scolecite": {
+    "name": "Scolecite",
+    "formula": "CaAl₂Si₃O₁₀·3H₂O",
+    "group": "Zeolite group",
+    "class": "Silicates (tectosilicates)",
+    "crystalSystem": "Monoclinic (pseudotetragonal)",
+    "hardness": "5–5.5",
+    "specificGravity": "2.25–2.29 (measured)",
+    "colour": "Colourless to white",
+    "streak": null,
+    "lustre": "Vitreous; silky when fibrous",
+    "habit": "Slender prismatic crystals, often square in cross-section and striated lengthwise; characteristically in radiating sprays or fibrous masses",
+    "typicalAssociates": ["Other zeolites", "Prehnite", "Calcite"],
+    "formationEnvironment": "Primarily in cavities in basalts; also in gneisses and amphibolites, and in intrusions derived from syenitic and gabbroic magmas.",
+    "properties": [
+      "Pyroelectric and piezoelectric.",
+      "May fluoresce yellow to brown under ultraviolet light.",
+      "Name from the Greek for “worm”, after the way it curls when heated.",
+      "Closely resembles the related fibrous zeolites natrolite and mesolite; telling them apart reliably usually needs optical or X-ray methods."
+    ],
+    "sources": [
+      { "label": "Handbook of Mineralogy — Scolecite", "url": "https://www.handbookofmineralogy.org/pdfs/scolecite.pdf" }
+    ]
+  }
+}

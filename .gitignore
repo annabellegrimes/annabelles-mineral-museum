@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+.vite/
+
+# Generated web copies of photos (rebuilt by `npm run media` and in CI)
+public/specimens/*/photos/_web/
+
+# Raw Polycam exports — keep these out of git; commit only the optimised model.glb
+scans-raw/
+*.usdz
+*.ply
+*.obj
+*.fbx
+*.stl
