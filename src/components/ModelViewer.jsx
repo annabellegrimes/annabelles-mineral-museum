@@ -1,58 +1,10 @@
 // Interactive 3D specimen viewer (React Three Fiber).
 // Loaded lazily, so three.js is only downloaded when someone opens a model.
-import { Component, Suspense, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { Canvas, useThree } from '@react-three/fiber';
-import { OrbitControls, useGLTF, Environment, Lightformer, useProgress } from '@react-three/drei';
-import { Box3, Vector3, MeshBasicMaterial, DoubleSide } from 'three';
+import { Suspense, useCallback, useEffect, useRef, useState } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Environment, Lightformer, useProgress } from '@react-three/drei';
+import { SpecimenModel, ModelErrorBoundary } from './three/SpecimenModel.jsx';
 import { Reset as ResetIcon, Spin as SpinIcon, Sun as SunIcon, Expand as ExpandIcon, Shrink as ShrinkIcon } from './Icons.jsx';
-
-const FIT_SIZE = 2; // models are scaled so their largest dimension is 2 units
-
-function Model({ url, flat, onLoaded }) {
-  const { scene } = useGLTF(url); // Draco + meshopt decoding supported
-  const invalidate = useThree((s) => s.invalidate);
-
-  // Normalise position & scale: Polycam exports can be in any orientation / units.
-  const { scale, offset } = useMemo(() => {
-    const box = new Box3().setFromObject(scene);
-    const size = box.getSize(new Vector3());
-    const center = box.getCenter(new Vector3());
-    const s = FIT_SIZE / (Math.max(size.x, size.y, size.z) || 1);
-    return { scale: s, offset: center.multiplyScalar(-s) };
-  }, [scene]);
-
-  // "Scan colours" mode: show the baked photographic texture without extra shading.
-  useLayoutEffect(() => {
-    scene.traverse((o) => {
-      if (!o.isMesh) return;
-      o.userData.original ??= o.material;
-      const orig = o.userData.original;
-      if (flat) {
-        o.userData.flat ??= new MeshBasicMaterial({
-          map: orig.map ?? null,
-          color: orig.color ?? 0xffffff,
-          vertexColors: !!orig.vertexColors,
-          transparent: !!orig.transparent,
-          opacity: orig.opacity ?? 1,
-          alphaTest: orig.alphaTest ?? 0,
-          side: DoubleSide,
-        });
-        o.material = o.userData.flat;
-      } else {
-        o.material = orig;
-      }
-    });
-    invalidate();
-  }, [scene, flat, invalidate]);
-
-  useEffect(() => { onLoaded?.(); }, [onLoaded]);
-
-  return (
-    <group scale={scale} position={offset}>
-      <primitive object={scene} />
-    </group>
-  );
-}
 
 function Studio() {
   // Procedural environment (no network fetch) so glossy specimens catch soft highlights.
@@ -78,13 +30,6 @@ function Progress() {
   );
 }
 
-class Boundary extends Component {
-  state = { error: null };
-  static getDerivedStateFromError(error) { return { error }; }
-  componentDidCatch(error) { this.props.onError?.(error); }
-  render() { return this.state.error ? null : this.props.children; }
-}
-
 export default function ModelViewer({ src, title, onError }) {
   const wrapRef = useRef(null);
   const controlsRef = useRef(null);
@@ -94,6 +39,7 @@ export default function ModelViewer({ src, title, onError }) {
   const [pseudo, setPseudo] = useState(false);
   const [interacted, setInteracted] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const markLoaded = useCallback(() => setLoaded(true), []);
 
   useEffect(() => {
     const onChange = () => setFullscreen(document.fullscreenElement === wrapRef.current);
@@ -147,12 +93,12 @@ export default function ModelViewer({ src, title, onError }) {
         <hemisphereLight args={['#fff8ec', '#2a2620', 0.6]} />
         <directionalLight position={[3, 5, 4]} intensity={1.6} />
         <directionalLight position={[-4, 2, -3]} intensity={0.5} />
-        <Boundary onError={onError}>
+        <ModelErrorBoundary onError={onError}>
           <Suspense fallback={null}>
-            <Model url={src} flat={flat} onLoaded={() => setLoaded(true)} />
+            <SpecimenModel url={src} flat={flat} onLoaded={markLoaded} />
             <Studio />
           </Suspense>
-        </Boundary>
+        </ModelErrorBoundary>
         <OrbitControls
           ref={controlsRef}
           makeDefault

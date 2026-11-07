@@ -34,6 +34,7 @@ IDs are permanent: `ROCK-0001`, `ROCK-0002`, …. Never reuse or renumber one, e
 - Put **JPEG, PNG or WebP** files in `public/specimens/ROCK-XXXX/photos/`.
 - iPhones save **HEIC** by default. Either set *Settings → Camera → Formats → Most Compatible*, or export the photos as JPEG.
 - Full-resolution originals are fine. At build time, `npm run media` creates web-sized copies in `photos/_web/`. That folder isn't committed; it's regenerated automatically.
+- **Background-free photos:** the current photos are cut-outs (transparent PNGs, trimmed to the rock and padded to the gallery's 4:5 shape). The unedited originals are kept in `photos/_original/`, which the site ignores. To do the same for new photos, run them through a background remover such as [rembg](https://github.com/danielgatis/rembg), then save the PNG in `photos/` and the original in `photos/_original/`.
 - The first photo alphabetically becomes the gallery cover. To choose a different cover, or to add captions:
 
 ```json

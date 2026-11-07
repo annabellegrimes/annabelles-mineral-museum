@@ -12,7 +12,17 @@
     "streak": "Green",
     "lustre": "Vitreous to somewhat greasy",
     "habit": "Typically radial fibrous aggregates, botryoidal to reniform crusts, or massive; euhedral crystals are rare",
-    "typicalAssociates": ["Austinite", "Olivenite", "Clinoclase", "Libethenite", "Brochantite", "Malachite", "Azurite", "Jarosite", "“Limonite”"],
+    "typicalAssociates": [
+      "Austinite",
+      "Olivenite",
+      "Clinoclase",
+      "Libethenite",
+      "Brochantite",
+      "Malachite",
+      "Azurite",
+      "Jarosite",
+      "“Limonite”"
+    ],
     "formationEnvironment": "An uncommon secondary mineral in the oxidized zone of copper deposits, typically forming by alteration of enargite.",
     "properties": [
       "Forms solid-solution series with austinite (zinc in place of copper), cobaltaustinite, and tangeite.",
@@ -20,7 +30,10 @@
       "Name from the Greek for “lime” and “copper”, the two essential metals in its composition."
     ],
     "sources": [
-      { "label": "Handbook of Mineralogy — Conichalcite", "url": "https://www.handbookofmineralogy.org/pdfs/conichalcite.pdf" }
+      {
+        "label": "Handbook of Mineralogy — Conichalcite",
+        "url": "https://www.handbookofmineralogy.org/pdfs/conichalcite.pdf"
+      }
     ]
   },
   "scolecite": {
@@ -35,7 +48,11 @@
     "streak": null,
     "lustre": "Vitreous; silky when fibrous",
     "habit": "Slender prismatic crystals, often square in cross-section and striated lengthwise; characteristically in radiating sprays or fibrous masses",
-    "typicalAssociates": ["Other zeolites", "Prehnite", "Calcite"],
+    "typicalAssociates": [
+      "Other zeolites",
+      "Prehnite",
+      "Calcite"
+    ],
     "formationEnvironment": "Primarily in cavities in basalts; also in gneisses and amphibolites, and in intrusions derived from syenitic and gabbroic magmas.",
     "properties": [
       "Pyroelectric and piezoelectric.",
@@ -44,7 +61,49 @@
       "Closely resembles the related fibrous zeolites natrolite and mesolite; telling them apart reliably usually needs optical or X-ray methods."
     ],
     "sources": [
-      { "label": "Handbook of Mineralogy — Scolecite", "url": "https://www.handbookofmineralogy.org/pdfs/scolecite.pdf" }
+      {
+        "label": "Handbook of Mineralogy — Scolecite",
+        "url": "https://www.handbookofmineralogy.org/pdfs/scolecite.pdf"
+      }
+    ]
+  },
+  "fluorite": {
+    "name": "Fluorite",
+    "formula": "CaF₂",
+    "group": "Fluorite group",
+    "class": "Halides",
+    "crystalSystem": "Cubic",
+    "hardness": "4",
+    "specificGravity": "3.175–3.184 (measured); up to 3.56 if rich in rare-earth elements",
+    "colour": "Colourless, white, purple, blue, green, yellow, orange, red, pink, brown or bluish black; commonly colour-zoned",
+    "streak": "White",
+    "lustre": "Vitreous; dull when massive",
+    "habit": "Cubes and octahedra (rarely dodecahedra) or combinations; also nodular, botryoidal, granular or massive",
+    "typicalAssociates": [
+      "Quartz",
+      "Dolomite",
+      "Calcite",
+      "Barite",
+      "Celestine",
+      "Sulfides",
+      "Cassiterite",
+      "Topaz",
+      "Wolframite",
+      "Scheelite",
+      "Apatite"
+    ],
+    "formationEnvironment": "An accessory mineral in granites, granite pegmatites, syenites, carbonatites and alkaline intrusives, and around fumaroles; economic deposits form in low- to high-temperature hydrothermal veins and stratabound deposits, and it can cement sandstones.",
+    "properties": [
+      "Perfect octahedral cleavage on {111}.",
+      "Fluoresces blue, violet, green, yellow or red under UV light; may also be phosphorescent, thermoluminescent or triboluminescent.",
+      "Isotropic: light travels at the same speed in every direction through the crystal.",
+      "Name from the Latin “to flow”, after its low melting point."
+    ],
+    "sources": [
+      {
+        "label": "Handbook of Mineralogy — Fluorite",
+        "url": "https://www.handbookofmineralogy.org/pdfs/fluorite.pdf"
+      }
     ]
   }
 }

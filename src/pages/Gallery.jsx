@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import SpecimenCard from '../components/SpecimenCard.jsx';
 import { Search } from '../components/Icons.jsx';
@@ -17,9 +17,30 @@ const SORTS = {
 
 const splitParam = (v) => (v ? v.split(',').filter(Boolean) : []);
 
+const GalleryCanvas = lazy(() => import('../components/Gallery3D.jsx').then((m) => ({ default: m.GalleryCanvas })));
+
+const VIEW_KEY = 'museum.galleryView';
+const webglAvailable = (() => {
+  try {
+    const c = document.createElement('canvas');
+    return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl')));
+  } catch { return false; }
+})();
+function initialView() {
+  try { return localStorage.getItem(VIEW_KEY) === 'photos' ? 'photos' : '3d'; } catch { return '3d'; }
+}
+
 export default function Gallery() {
   const [params, setParams] = useSearchParams();
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [view, setView] = useState(initialView);
+  const chooseView = (v) => {
+    setView(v);
+    try { localStorage.setItem(VIEW_KEY, v); } catch { /* private mode */ }
+  };
+  const anyModels = specimens.some((s) => s.model);
+  const can3d = webglAvailable && anyModels;
+  const show3d = can3d && view === '3d';
   const q = params.get('q') ?? '';
   const statuses = splitParam(params.get('status'));
   const colours = splitParam(params.get('colour'));
@@ -110,6 +131,12 @@ export default function Gallery() {
             <select className="select" value={sort} onChange={(e) => update('sort', e.target.value === 'id' ? '' : e.target.value)} aria-label="Sort by">
               {Object.entries(SORTS).map(([k, v]) => <option key={k} value={k}>Sort: {v.label}</option>)}
             </select>
+            {can3d && (
+              <div className="view-toggle" role="group" aria-label="Show specimens as">
+                <button type="button" aria-pressed={view === '3d'} onClick={() => chooseView('3d')}>3D</button>
+                <button type="button" aria-pressed={view === 'photos'} onClick={() => chooseView('photos')}>Photos</button>
+              </div>
+            )}
             <button type="button" className="chip filters-toggle" aria-expanded={filtersOpen} onClick={() => setFiltersOpen((v) => !v)}>
               Filters{(statuses.length + colours.length + (group ? 1 : 0)) ? ` (${statuses.length + colours.length + (group ? 1 : 0)})` : ''}
             </button>
@@ -165,7 +192,7 @@ export default function Gallery() {
 
         {results.length ? (
           <div className="grid">
-            {results.map((s) => <SpecimenCard key={s.id} s={s} />)}
+            {results.map((s) => <SpecimenCard key={s.id} s={s} show3d={show3d} />)}
           </div>
         ) : (
           <div className="empty">
@@ -174,6 +201,12 @@ export default function Gallery() {
           </div>
         )}
       </section>
+
+      {show3d && (
+        <Suspense fallback={null}>
+          <GalleryCanvas />
+        </Suspense>
+      )}
     </>
   );
 }

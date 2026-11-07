@@ -43,12 +43,13 @@
       "cover": null,
       "photos": [
         {
-          "file": "ROCK-0001_01.jpg",
+          "file": "ROCK-0001_01.png",
           "caption": "Grape agate"
         }
       ],
       "originalScanFilename": "2026-11-06.glb",
-      "scanNotes": null
+      "scanNotes": null,
+      "photoNotes": "Photo background removed for display; the unedited photograph is kept in photos/_original/."
     }
   },
   {
@@ -94,24 +95,25 @@
       "cover": null,
       "photos": [
         {
-          "file": "ROCK-0002_01.jpg",
-          "caption": "On white paper"
+          "file": "ROCK-0002_01.png",
+          "caption": null
         }
       ],
       "originalScanFilename": "Rock 2.glb",
-      "scanNotes": "\"Rock 2.zip\" and \"2026-11-06 2.zip\" contained the same scan."
+      "scanNotes": "\"Rock 2.zip\" and \"2026-11-06 2.zip\" contained the same scan.",
+      "photoNotes": "Photo background removed for display; the unedited photograph is kept in photos/_original/."
     }
   },
   {
     "id": "ROCK-0003",
     "recordStatus": "in-progress",
     "identification": {
-      "name": null,
-      "species": null,
-      "status": "pending",
-      "confidence": null,
-      "method": null,
-      "notes": "Identification: Purple fluorite (previously proposed). Status: Owner reports identified; name not supplied. Evidence and next steps: Ask owner for updated identification; fluorite was photo-based suggestion. Mineral facts / handling: Fluorite CaF2; previous hypothesis only.",
+      "name": "Fluorite",
+      "species": "fluorite",
+      "status": "confirmed",
+      "confidence": "high",
+      "method": "Identified by the owner",
+      "notes": "2026-11-06: owner confirmed the identification: “definitely fluorite.” Earlier catalogue notes: Identification: Purple fluorite (previously proposed). Status: Owner reports identified; name not supplied. Evidence and next steps: Ask owner for updated identification; fluorite was photo-based suggestion. Mineral facts / handling: Fluorite CaF2; previous hypothesis only.",
       "alternatives": []
     },
     "collection": {
@@ -145,12 +147,13 @@
       "cover": null,
       "photos": [
         {
-          "file": "ROCK-0003_01.jpg",
-          "caption": "On a white tabletop"
+          "file": "ROCK-0003_01.png",
+          "caption": null
         }
       ],
       "originalScanFilename": "Rock 3.glb",
-      "scanNotes": "The scan file was named \"Rock 3.glb\" inside \"Rock 4.zip\"; the spreadsheet records this specimen as Rock 4."
+      "scanNotes": "The scan file was named \"Rock 3.glb\" inside \"Rock 4.zip\"; the spreadsheet records this specimen as Rock 4.",
+      "photoNotes": "Photo background removed for display; the unedited photograph is kept in photos/_original/."
     }
   },
   {
@@ -196,12 +199,13 @@
       "cover": null,
       "photos": [
         {
-          "file": "ROCK-0004_01.jpg",
-          "caption": "On white paper"
+          "file": "ROCK-0004_01.png",
+          "caption": null
         }
       ],
       "originalScanFilename": "2026-11-06.glb",
-      "scanNotes": null
+      "scanNotes": null,
+      "photoNotes": "Photo background removed for display; the unedited photograph is kept in photos/_original/."
     }
   },
   {
@@ -255,12 +259,13 @@
       "cover": null,
       "photos": [
         {
-          "file": "ROCK-0005_01.jpg",
+          "file": "ROCK-0005_01.png",
           "caption": "Needle sprays with larger translucent blocky crystals"
         }
       ],
       "originalScanFilename": "2026-11-06.glb",
-      "scanNotes": "Catalogued as Rock 6; the scan came in a zip named \"Rock 5 .zip\"."
+      "scanNotes": "Catalogued as Rock 6; the scan came in a zip named \"Rock 5 .zip\".",
+      "photoNotes": "Photo background removed for display; the unedited photograph is kept in photos/_original/."
     }
   }
 ]
