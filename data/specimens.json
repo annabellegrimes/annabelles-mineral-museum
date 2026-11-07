@@ -1,57 +1,66 @@
 [
   {
     "id": "ROCK-0001",
-    "recordStatus": "awaiting-import",
+    "recordStatus": "in-progress",
     "identification": {
-      "name": null,
+      "name": "Grape agate",
       "species": null,
       "status": "pending",
       "confidence": null,
-      "method": null,
-      "notes": null,
+      "method": "Named as grape agate by the owner (7 Nov 2026)",
+      "notes": "Identification: Grape agate (previously proposed). Status: Owner reports identified; name not supplied. Evidence and next steps: Ask owner for updated identification; previous guess was grape agate. Mineral facts / handling: Botryoidal quartz is a previous hypothesis, not independently confirmed.",
       "alternatives": []
     },
     "collection": {
       "dateAcquired": null,
       "acquisitionType": null,
-      "acquiredFrom": null,
+      "acquiredFrom": "Amethyst Creations, Vancouver",
       "originalLabel": null,
-      "notes": null
+      "notes": "Working label: Rock 1. Media noted in the spreadsheet: 2026-11-06.zip; original catalogue photo link."
     },
     "observations": {
-      "colours": [],
-      "colourDescription": null,
-      "habit": null,
+      "colours": [
+        "purple",
+        "white",
+        "brown"
+      ],
+      "colourDescription": "Pale lavender and cream/tan",
+      "habit": "Rounded botryoidal nodules",
       "lustre": null,
       "associatedMinerals": [],
       "dimensions": null,
       "mass": null,
-      "notes": null
+      "notes": "Pale lavender and cream/tan; rounded botryoidal nodules"
     },
     "mineralogy": {},
     "provenance": {
       "documented": null,
       "hypotheses": [],
       "formationEnvironment": null,
-      "notes": null
+      "notes": "Bought from Amethyst Creations in Vancouver. That is where it was sold, not evidence of where it formed."
     },
     "media": {
       "cover": null,
-      "photos": [],
-      "originalScanFilename": null,
+      "photos": [
+        {
+          "file": "ROCK-0001_01.jpg",
+          "caption": "Grape agate"
+        }
+      ],
+      "originalScanFilename": "2026-11-06.glb",
       "scanNotes": null
     }
   },
   {
     "id": "ROCK-0002",
-    "recordStatus": "awaiting-import",
+    "recordStatus": "in-progress",
     "identification": {
       "name": null,
       "species": null,
       "status": "unidentified",
       "confidence": null,
       "method": null,
-      "notes": null,
+      "notes": "Identification: Unidentified. Status: Unidentified. Evidence and next steps: Owner recalled name beginning with B; malachite rejected. Mineral facts / handling: Do not assign a mineral without additional evidence.",
       "alternatives": []
     },
     "collection": {
@@ -59,17 +68,20 @@
       "acquisitionType": null,
       "acquiredFrom": null,
       "originalLabel": null,
-      "notes": null
+      "notes": "Working label: Rock 2. Media noted in the spreadsheet: Rock 2.zip; Rock 2(1).zip."
     },
     "observations": {
-      "colours": [],
-      "colourDescription": null,
+      "colours": [
+        "green",
+        "brown"
+      ],
+      "colourDescription": "Bright/dark green veins and patches in a beige matrix, with rusty areas",
       "habit": null,
       "lustre": null,
       "associatedMinerals": [],
       "dimensions": null,
       "mass": null,
-      "notes": null
+      "notes": "Bright/dark green veins and patches in beige granular matrix; rusty areas"
     },
     "mineralogy": {},
     "provenance": {
@@ -80,21 +92,26 @@
     },
     "media": {
       "cover": null,
-      "photos": [],
-      "originalScanFilename": null,
-      "scanNotes": null
+      "photos": [
+        {
+          "file": "ROCK-0002_01.jpg",
+          "caption": "On white paper"
+        }
+      ],
+      "originalScanFilename": "Rock 2.glb",
+      "scanNotes": "\"Rock 2.zip\" and \"2026-11-06 2.zip\" contained the same scan."
     }
   },
   {
     "id": "ROCK-0003",
-    "recordStatus": "awaiting-import",
+    "recordStatus": "in-progress",
     "identification": {
       "name": null,
       "species": null,
       "status": "pending",
       "confidence": null,
       "method": null,
-      "notes": null,
+      "notes": "Identification: Purple fluorite (previously proposed). Status: Owner reports identified; name not supplied. Evidence and next steps: Ask owner for updated identification; fluorite was photo-based suggestion. Mineral facts / handling: Fluorite CaF2; previous hypothesis only.",
       "alternatives": []
     },
     "collection": {
@@ -102,17 +119,20 @@
       "acquisitionType": null,
       "acquiredFrom": null,
       "originalLabel": null,
-      "notes": null
+      "notes": "Working label: Rock 4. Media noted in the spreadsheet: Rock 4.zip; IMG_9304899C-4001-4A4A-B8FD-9D0340B080E9.jpeg."
     },
     "observations": {
-      "colours": [],
-      "colourDescription": null,
-      "habit": null,
+      "colours": [
+        "purple",
+        "brown"
+      ],
+      "colourDescription": "Deep violet, with pale seams and yellow-brown staining",
+      "habit": "Blocky intergrown crystals",
       "lustre": null,
       "associatedMinerals": [],
       "dimensions": null,
       "mass": null,
-      "notes": null
+      "notes": "Deep violet blocky intergrown crystals, pale seams and yellow-brown staining"
     },
     "mineralogy": {},
     "provenance": {
@@ -123,21 +143,26 @@
     },
     "media": {
       "cover": null,
-      "photos": [],
-      "originalScanFilename": null,
-      "scanNotes": null
+      "photos": [
+        {
+          "file": "ROCK-0003_01.jpg",
+          "caption": "On a white tabletop"
+        }
+      ],
+      "originalScanFilename": "Rock 3.glb",
+      "scanNotes": "The scan file was named \"Rock 3.glb\" inside \"Rock 4.zip\"; the spreadsheet records this specimen as Rock 4."
     }
   },
   {
     "id": "ROCK-0004",
-    "recordStatus": "awaiting-import",
+    "recordStatus": "in-progress",
     "identification": {
       "name": "Conichalcite",
       "species": "conichalcite",
       "status": "confirmed",
       "confidence": null,
-      "method": null,
-      "notes": null,
+      "method": "Identified by the owner (spreadsheet: \"Owner-confirmed\")",
+      "notes": "Identification: Conichalcite. Status: Owner-confirmed. Evidence and next steps: Identified as conichalcite by owner; locality unknown. Mineral facts / handling: CaCu(AsO4)(OH); arsenate; avoid dust or grinding.",
       "alternatives": []
     },
     "collection": {
@@ -145,17 +170,20 @@
       "acquisitionType": null,
       "acquiredFrom": null,
       "originalLabel": null,
-      "notes": null
+      "notes": "Working label: Rock 5. Media noted in the spreadsheet: Rock 5.zip; IMG_EACB85AC-6C44-44EA-9BD9-B42FAAD33301.jpeg."
     },
     "observations": {
-      "colours": [],
-      "colourDescription": null,
-      "habit": null,
+      "colours": [
+        "green",
+        "brown"
+      ],
+      "colourDescription": "Green aggregates on brown matrix",
+      "habit": "Botryoidal / cauliflower aggregates on matrix",
       "lustre": null,
       "associatedMinerals": [],
       "dimensions": null,
       "mass": null,
-      "notes": null
+      "notes": "Green botryoidal/cauliflower aggregates on brown matrix; pale inclusion"
     },
     "mineralogy": {},
     "provenance": {
@@ -166,39 +194,55 @@
     },
     "media": {
       "cover": null,
-      "photos": [],
-      "originalScanFilename": null,
+      "photos": [
+        {
+          "file": "ROCK-0004_01.jpg",
+          "caption": "On white paper"
+        }
+      ],
+      "originalScanFilename": "2026-11-06.glb",
       "scanNotes": null
     }
   },
   {
     "id": "ROCK-0005",
-    "recordStatus": "awaiting-import",
+    "recordStatus": "in-progress",
     "identification": {
       "name": "Scolecite",
       "species": "scolecite",
       "status": "tentative",
       "confidence": null,
-      "method": null,
-      "notes": null,
-      "alternatives": []
+      "method": "Photo-based comparison; not verified",
+      "notes": "Identification: Scolecite (most likely; tentative). Status: Tentative — photo-based. Evidence and next steps: Alternative: mesolite; matrix may contain apophyllite or stilbite. Compare needle habit and cleavage; original label or close-up needed. Mineral facts / handling: Scolecite is a zeolite mineral (CaAl2Si3O10·3H2O); identification not verified.",
+      "alternatives": [
+        {
+          "name": "Mesolite",
+          "notes": "Alternative noted in the spreadsheet"
+        }
+      ]
     },
     "collection": {
       "dateAcquired": null,
       "acquisitionType": null,
       "acquiredFrom": null,
       "originalLabel": null,
-      "notes": null
+      "notes": "Working label: Rock 6. Media noted in the spreadsheet: Rock 5 .zip (user designated this specimen Rock 6); earlier photo IMG_3F6B9CB9-BE31-4951-A4E7-1A767FE972F7.jpeg."
     },
     "observations": {
-      "colours": [],
-      "colourDescription": null,
-      "habit": null,
+      "colours": [
+        "pink",
+        "colourless"
+      ],
+      "colourDescription": "Pale pink-beige needle sprays; larger translucent blocky crystals",
+      "habit": "Radiating sprays of fine needle-like crystals, with larger translucent blocky crystals",
       "lustre": null,
-      "associatedMinerals": [],
+      "associatedMinerals": [
+        "Apophyllite (possible)",
+        "Stilbite (possible)"
+      ],
       "dimensions": null,
       "mass": null,
-      "notes": null
+      "notes": "Pale pink-beige radiating sprays of fine needle-like crystals, with larger translucent blocky crystals on matrix (earlier Rock 6 photograph)."
     },
     "mineralogy": {},
     "provenance": {
@@ -209,9 +253,14 @@
     },
     "media": {
       "cover": null,
-      "photos": [],
-      "originalScanFilename": null,
-      "scanNotes": null
+      "photos": [
+        {
+          "file": "ROCK-0005_01.jpg",
+          "caption": "Needle sprays with larger translucent blocky crystals"
+        }
+      ],
+      "originalScanFilename": "2026-11-06.glb",
+      "scanNotes": "Catalogued as Rock 6; the scan came in a zip named \"Rock 5 .zip\"."
     }
   }
 ]
